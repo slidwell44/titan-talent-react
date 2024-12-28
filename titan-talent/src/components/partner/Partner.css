@@ -1,0 +1,14 @@
+.partner-container {
+    background-color: #f8f9fa;
+    padding: 20px;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .partner-text {
+    max-width: 800px;
+    margin: 0 auto;
+  }

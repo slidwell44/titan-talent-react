@@ -1,13 +1,44 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Arial', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f8f9fa;
+  color: #333;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Apply blocky font and uppercase transformation to all headers */
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif; /* Example blocky font */
+}
+
+:root {
+  --go--color--white: hsl(0, 0%, 100%);
+  --go--color--primary: hsl(223, 21%, 30%);
+  --go--color--secondary: hsl(47, 100%, 50%);
+  --go--color--tertiary: hsl(47, 100%, 50%);
+  --go--color--background: hsl(0, 0%, 100%);
+  --go-header--color--background: hsl(223, 21%, 30%);
+  --go-site-title--color--text: hsl(47, 100%, 50%);
+  --go-site-description--color--text: hsl(47, 100%, 50%);
+  --go-navigation--color--text: hsl(47, 100%, 50%);
+  --go-search-toggle--color--text: hsl(47, 100%, 50%);
+  --go-search-button--color--background: hsl(47, 100%, 50%);
+  --go-footer--color--background: hsl(0, 0%, 100%);
+  --go-footer--color--text: hsl(223, 21%, 30%);
+  --go-footer-navigation--color--text: hsl(223, 21%, 30%);
+  --go-social--color--text: hsl(47, 100%, 50%);
+  --go-logo--max-width: 100px;
+  --go-logo-mobile--max-width: 100px;
+  --go--viewport-basis: 1641;
 }
