@@ -6,18 +6,20 @@ import './Header.css';
 const Header = () => {
   return (
     <header className="header-container">
-      <div className="logo-container">
-        <div className="logo">
-          <img src="cropped-titan-logo-yellow-1.png" alt="Titan Talent Logo" className="logo-image" />
-          <Link to="/">Titan Talent Acquisition</Link>
+      <div className="header-content">
+        <div className="logo-container">
+          <div className="logo">
+            <img src="cropped-titan-logo-yellow-1.png" alt="Titan Talent Logo" className="logo-image" />
+            <Link to="/">Titan Talent Acquisition</Link>
+          </div>
+          <div className="tagline">
+            Bespoke Employment Solutions Tailored To Your Business
+          </div>
         </div>
-        <div className="tagline">
-          Bespoke Employment Solutions Tailored To Your Business
-        </div>
+        <nav className="nav-menu">
+          <Dropdown />
+        </nav>
       </div>
-      <nav className="nav-menu">
-        <Dropdown />
-      </nav>
     </header>
   );
 };

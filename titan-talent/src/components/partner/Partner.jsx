@@ -3,13 +3,15 @@ import "./Partner.css";
 
 const Partner = () => {
   return (
-    <header className="partner-container">
+    <div className="partner-container">
       <div className="partner-text">
-        <h1>Partner with Titan Talent</h1>
-        <button>I'm a client</button>
-        <button>I'm a candidate</button>
+        <h2 className="partner-title">Partner with Titan Talent</h2>
+        <button className="button-common partner-button">I'm a Client</button>
+        <button className="button-common candidate-button">
+          I'm a Candidate
+        </button>
       </div>
-    </header>
+    </div>
   );
 };
 

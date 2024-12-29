@@ -1,6 +1,7 @@
 .hero-container {
   background-color: var(--go-header--color--background);
-  padding: 20px;
+  padding: 2rem;
+  padding-top: 10rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,18 +9,18 @@
 }
 
 .hero-text {
-  max-width: 800px;
+  max-width: 50rem;
   margin: 0 auto;
   color: var(--go-site-title--color--text);
 }
 
 .hero-title {
-  font-size: 3em;
-  margin-bottom: 20px;
+  font-size: 3rem;
+  margin-bottom: 1.25rem;
 }
 
 .hero-description {
-  font-size: .9em;
-  margin-bottom: 40px;
+  font-size: 1rem;
+  margin-bottom: 2.5rem;
   color: var(--go--color--white);
 }
