@@ -1,0 +1,17 @@
+.footer-container {
+    background-color: #f8f9fa;
+    color: black;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .footer-container .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .footer-container .social-links a {
+    color: blue;
+    text-decoration: none;
+  }

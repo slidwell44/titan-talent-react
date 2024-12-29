@@ -1,0 +1,80 @@
+.header-container {
+  background-color: var(--go-header--color--background);
+  padding: 1.25rem;
+  color: var(--go-site-title--color--text);
+  display: flex;
+  justify-content: center; /* Center the header-content container */
+  align-items: center;
+  position: fixed;
+  text-transform: uppercase;
+  font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
+  top: 0;
+  left: 0;
+  width: 100%; /* Ensure the header spans the full width */
+  z-index: 1000; /* Ensure the header is above other content */
+}
+
+.header-content {
+  width: 90%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  position: relative; /* Allows absolute positioning in child */
+  /* Add other styling as needed */
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 1; /* Allow the logo-container to take up available space */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the logo within the container */
+}
+
+.logo a {
+  color: var(--go-site-title--color--text);
+  font-size: 1.5rem;
+  text-decoration: none;
+  margin-left: 0.625rem;
+}
+
+.logo-image {
+  height: 5rem;
+  width: auto;
+  max-width: var(--go-logo--max-width);
+}
+
+.tagline {
+  margin-top: 0.625rem;
+  font-size: 1rem;
+  color: var(--go-site-description--color--text);
+  text-transform: none;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 1.25rem;
+  top: 50%;
+  transform: translateY(-50%);
+  /* Remove margin-left: auto; padding-right if needed */
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 0.625rem;
+    right: 0.625rem;
+  }
+}
